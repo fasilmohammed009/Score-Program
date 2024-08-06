@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="fasil.css">
+</head>
+<body>
+    <h1>Guess The Number</h1>
+    <input id="guessnumber">
+    <button onclick="check()">check</button>
+    <p id="result">You Are Wrong/Right</p>
+    <p id="score">score:10</p>
+
+    <script>
+    var guessnumber=document.getElementById("guessnumber")
+        var result=document.getElementById("result")
+        var score=document.getElementById("score")
+        var randomNumber= Math.floor(Math.random()*10)+1
+        var totalscore=10
+        
+        
+        function check()
+        {
+            var enterednumber=guessnumber.value
+            
+            if(randomNumber==enterednumber)
+                {
+                    console.log("right")
+                    result.textcontent="right"
+                    alert("YOU WIN..")
+                }
+                else{
+                    totalscore=totalscore-1
+                    score.textContent="score:"+totalscore
+                    result.textContent="wrong"
+                }
+        
+        }
+        </script>
+</body>
+</html>
