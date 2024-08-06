@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 2rem;
+    background-color: pink;
+    min-height: 100vh;
+}
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+p{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+input{
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
